@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Informe</title>
+    <link rel="stylesheet" href="css/stile.css">
+</head>
+<body>
+    <header>
+        <h1>Generar Informe de Citas</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="agendar_cita.html"><i class="fas fa-calendar-plus"></i> Agendar Cita</a></li>
+            <li><a href="modificar_cita.html"><i class="fas fa-edit"></i> Modificar Cita</a></li>
+            <li><a href="cancelar_cita.html"><i class="fas fa-calendar-times"></i> Cancelar Cita</a></li>
+            <li><a href="ver_historial.html"><i class="fas fa-history"></i> Ver Historial</a></li>
+            <li><a href="generar_informe.html"><i class="fas fa-chart-bar"></i> Generar Informe</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="generar-informe">
+            <h2>Informe de Citas</h2>
+            <div id="informe">
+                <!-- El informe se cargará dinámicamente desde PHP -->
+                <?php include 'php/generar_informe.php'; ?>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Subcentro “El Salto”</p>
+    </footer>
+</body>
+</html>
